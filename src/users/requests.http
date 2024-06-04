@@ -1,0 +1,48 @@
+### Create a new user
+POST http://localhost:3000/auth/signup
+content-type: application/json
+
+{
+  "email": "asdf2@asdf.com",
+  "password": "asdlfkajsd"
+}
+
+
+### Sign in as an existing user
+POST http://localhost:3000/auth/signin
+content-type: application/json
+
+{
+  "email": "asdf2@asdf.com",
+  "password": "asdlfkajsd"
+}
+
+
+### Sign out
+POST http://localhost:3000/auth/signout
+content-type: application/json
+
+
+### Get the currently signed in user
+GET http://localhost:3000/auth/whoami
+
+
+### Find a particular user with a given Id
+GET http://localhost:3000/auth/1
+
+
+### Find all users with a given email
+GET http://localhost:3000/auth?email=bbbb@bbbb.com
+
+
+### Delete a user with a given Id
+DELETE http://localhost:3000/auth/4
+
+
+### Update a user
+PATCH http://localhost:3000/auth/1
+content-type: application/json
+
+{
+  "email": "bbbb@bbbb.com"
+}
