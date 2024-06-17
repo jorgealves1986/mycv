@@ -31,6 +31,9 @@ Theme: "Used Car Pricing API"
 
 If you are using vscode and have the extention "REST Client", you can use the files requests.http, already created, to test the app.
 
+You need to create a file named .env.development, with the vars that you can see on .env.example, to be able to run the app on development mode.
+You need to create a file named .env.test, with the vars that you can see on .env.example, to be able to run the test scripts.
+
 ## Installation
 
 ```bash
